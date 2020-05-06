@@ -1,4 +1,4 @@
-# PersonalPortfoliAngular
+# A Personal Portfolio Website build with Angular 9
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.2. But this has been updated to use the latest tools, and now builds with ng cli 9.1.4
 
