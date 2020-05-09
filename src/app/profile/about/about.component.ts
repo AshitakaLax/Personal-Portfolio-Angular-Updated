@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonalInfoService } from '../../services/personal-info.service';
+import { PersonalInfo } from 'src/app/models/personal-info.model';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  person:PersonalInfo;
+  constructor(private personalInfoService:PersonalInfoService) { }
 
   ngOnInit() {
+    this.personalInfoService.getUserInfo().subscribe(info => {
+      this.person = info;
+    });
   }
 
 }
