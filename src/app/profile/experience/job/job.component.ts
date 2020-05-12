@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { WorkExperience } from 'src/app/models/work-experience.model';
 
 @Component({
-  selector: 'app-experience',
+  selector: 'app-job-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss']
 })
